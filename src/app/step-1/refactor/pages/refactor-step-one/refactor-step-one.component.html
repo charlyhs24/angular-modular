@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <span>Contact App</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<div style="max-width: 600px; background-color: #63af89;">
+  <mat-list>
+    <div mat-subheader>List Contact</div>
+    <mat-divider></mat-divider>
+    <mat-list-item *ngFor="let contact of contact$ | async">
+      <mat-icon mat-list-icon>account_box</mat-icon>
+      <div mat-line>{{contact.name}}</div>
+      <div mat-line> {{contact.email}} </div>
+      <div *ngIf="contact.isShowButtonCall" class="action-section">
+        <app-step-one-refactor-action [contact]="contact" (messageEvent)="CallHandler($event)">
+        </app-step-one-refactor-action>
+      </div>
+      <div class="spinner-section">
+        <!-- <app-step-one-refactor-spinner [isShowSpinner]="contact.isShowSpinner"></app-step-one-refactor-spinner> -->
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>

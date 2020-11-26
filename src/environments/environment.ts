@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_URL: 'http://localhost:3000',
+  FIREBASE_URL: 'https://www.my-firebase-url-default',
+  OAUTH_URL: 'https://www.my-oauth-url-default'
 };
 
 /*

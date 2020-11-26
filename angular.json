@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -55,6 +56,22 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stage.ts"
+                }
+              ]
+            },
+            "local-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local-dev.ts"
+                }
+              ]
             }
           }
         },
@@ -66,6 +83,12 @@
           "configurations": {
             "production": {
               "browserTarget": "contact-app:build:production"
+            },
+            "staging": {
+              "browserTarget": "contact-app:build:staging"
+            },
+            "development": {
+              "browserTarget": "contact-app:build:local-dev"
             }
           }
         },
@@ -87,6 +110,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -118,6 +142,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "contact-app"
 }
