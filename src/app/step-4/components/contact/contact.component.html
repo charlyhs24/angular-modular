@@ -1,0 +1,14 @@
+<mat-list-item class="contact">
+    <mat-icon mat-list-icon>account_box</mat-icon>
+    <div mat-line>{{fullName}}</div>
+    <div mat-line>{{email}}</div>
+    <div *ngIf="showButtonCall" class="action-section">
+        <button (click)="buttonCallHandler()" mat-button color="accent">
+            <mat-icon mat-list-icon>phone</mat-icon>
+            Call
+        </button>
+    </div>
+    <div *ngIf="showSpinner" class="spinner-section">
+        <mat-spinner diameter="20" color="accent"></mat-spinner>Calling...
+    </div>
+</mat-list-item>

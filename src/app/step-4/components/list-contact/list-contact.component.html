@@ -1,0 +1,7 @@
+<mat-list class="list-contact">
+    <div mat-subheader><strong>List Contact</strong></div>
+    <mat-divider></mat-divider>
+    <app-contacts *ngFor="let contact of contact$ | async" [contactId]="contact.id" [fullName]="contact.name"
+        [email]="contact.email" [showButtonCall]="contact.isShowButtonCall" [showSpinner]="contact.isShowSpinner"
+        (callEvent)="callUserHandler($event)"></app-contacts>
+</mat-list>

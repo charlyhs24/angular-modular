@@ -4,6 +4,7 @@ import { RefactorStepOneComponent } from './step-1/refactor/pages/refactor-step-
 import { ContactComponent } from './step-1/pages/contact/contact.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageContactComponent } from './step-4/pages/page-contact/page-contact.component';
 
 const routes: Routes = [
   {
@@ -23,9 +24,13 @@ const routes: Routes = [
     loadChildren: () => import('./step-3/pages/step-three-contact/step-three-contact.module').then((module) => module.StepThreeContactModule)
   },
   {
+    path: 'step-4',
+    component: PageContactComponent
+  },
+  {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'step-3'
+    redirectTo: 'step-4'
   },
 
 ];

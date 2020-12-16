@@ -2,36 +2,18 @@
   "users": [
     {
       "id": 1,
-      "name": "Leanne Graham",
-      "username": "Bret",
       "email": "Sincere@april.biz",
-      "isShowButtonCall": false,
-      "isShowSpinner": true,
-      "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-          "lat": "-37.3159",
-          "lng": "81.1496"
-        }
-      },
-      "phone": "1-770-736-8031 x56442",
-      "website": "hildegard.org",
-      "company": {
-        "name": "Romaguera-Crona",
-        "catchPhrase": "Multi-layered client-server neural-net",
-        "bs": "harness real-time e-markets"
-      }
+      "isShowButtonCall": true,
+      "isShowSpinner": false,
+      "name": "Leanne Graham"
     },
     {
       "id": 2,
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
-      "isShowButtonCall": false,
-      "isShowSpinner": true,
+      "isShowButtonCall": true,
+      "isShowSpinner": false,
       "address": {
         "street": "Victor Plains",
         "suite": "Suite 879",
@@ -55,8 +37,8 @@
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
-      "isShowButtonCall": false,
-      "isShowSpinner": true,
+      "isShowButtonCall": true,
+      "isShowSpinner": false,
       "address": {
         "street": "Douglas Extension",
         "suite": "Suite 847",
@@ -80,8 +62,8 @@
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
-      "isShowButtonCall": false,
-      "isShowSpinner": true,
+      "isShowButtonCall": true,
+      "isShowSpinner": false,
       "address": {
         "street": "Hoeger Mall",
         "suite": "Apt. 692",
@@ -105,8 +87,8 @@
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
-      "isShowButtonCall": false,
-      "isShowSpinner": true,
+      "isShowButtonCall": true,
+      "isShowSpinner": false,
       "address": {
         "street": "Skiles Walks",
         "suite": "Suite 351",

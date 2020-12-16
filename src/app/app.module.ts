@@ -17,12 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { RefactorStepOneComponent } from './step-1/refactor/pages/refactor-step-one/refactor-step-one.component';
 import { StepOneRefactorActionComponent } from './step-1/refactor/components/step-one-refactor-action/step-one-refactor-action.component';
 import { StepOneRefactorSpinnerComponent } from './step-1/refactor/components/step-one-refactor-spinner/step-one-refactor-spinner.component';
-import { StepTwoContactComponent } from './step-2/pages/step-two-contact/step-two-contact.component';
-import { StepTwoContactSpinnerComponent } from './step-2/components/step-two-contact-spinner/step-two-contact-spinner.component';
-import { StepTwoContactActionComponent } from './step-2/components/step-two-contact-action/step-two-contact-action.component';
-import { StepThreeContactComponent } from './step-3/pages/step-three-contact/step-three-contact.component';
-// import { StepThreeContactActionComponent } from './step-3/components/step-three-contact-action/step-three-contact-action.component';
-// import { StepThreeContactSpinnerComponent } from './step-3/components/step-three-contact-spinner/step-three-contact-spinner.component';
+import { NavbarComponent } from './step-4/components/navbar/navbar.component';
+import { PageContactComponent } from './step-4/pages/page-contact/page-contact.component';
+import { ListContactComponent } from './step-4/components/list-contact/list-contact.component';
+import { ContactsComponent } from './step-4/components/contact/contacts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,13 +28,10 @@ import { StepThreeContactComponent } from './step-3/pages/step-three-contact/ste
     RefactorStepOneComponent,
     StepOneRefactorActionComponent,
     StepOneRefactorSpinnerComponent,
-    // StepTwoContactComponent,
-    // StepTwoContactSpinnerComponent,
-    // StepTwoContactActionComponent,
-    // StepThreeContactComponent,
-    // StepThreeContactActionComponent,
-    // StepThreeContactSpinnerComponent
-
+    NavbarComponent,
+    PageContactComponent,
+    ListContactComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +44,6 @@ import { StepThreeContactComponent } from './step-3/pages/step-three-contact/ste
     MatButtonModule,
     HttpClientModule,
     StepTwoContactModule,
-    // StepThreeContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]
